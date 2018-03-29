@@ -1,0 +1,16 @@
+/* General
+---------------------------*/
+body{
+    margin:0;
+    font:14px "proxima-nova",sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    background:#fff; 
+    color:#212529;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  color: #353942;
+}
+
+.logo_smarkio img{
+    width:200px;
+}
