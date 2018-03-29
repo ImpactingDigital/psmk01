@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2c83e6;
+      }
+
+      .cls-2, .cls-7 {
+        fill: #bec8d2;
+      }
+
+      .cls-3 {
+        fill: #d8e0ea;
+      }
+
+      .cls-4 {
+        fill: #e8f0fa;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-6, .cls-7 {
+        stroke: #2c83e6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>otimization</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path class="cls-1" d="M70,2A68,68,0,1,1,2,70,68.08,68.08,0,0,1,70,2m0-2a70,70,0,1,0,70,70A70,70,0,0,0,70,0Z"/>
+      <g>
+        <path class="cls-2" d="M70,139a68.38,68.38,0,0,1-29-6.38V52a3,3,0,0,1,3-3h76a3,3,0,0,1,3,3v62.18A68.82,68.82,0,0,1,70,139Z"/>
+        <path class="cls-1" d="M120,50a2,2,0,0,1,2,2v61.82A68,68,0,0,1,42,132V52a2,2,0,0,1,2-2h76m0-2H44a4,4,0,0,0-4,4v81.25a70,70,0,0,0,84-18.71V52a4,4,0,0,0-4-4Z"/>
+      </g>
+      <g>
+        <path class="cls-3" d="M70,139a68.74,68.74,0,0,1-37-10.77V44a3,3,0,0,1,3-3h76a3,3,0,0,1,3,3v78.28A68.94,68.94,0,0,1,70,139Z"/>
+        <path class="cls-1" d="M112,42a2,2,0,0,1,2,2v77.82a67.93,67.93,0,0,1-80,5.85V44a2,2,0,0,1,2-2h76m0-2H36a4,4,0,0,0-4,4v84.77a69.93,69.93,0,0,0,84-6V44a4,4,0,0,0-4-4Z"/>
+      </g>
+      <g>
+        <path class="cls-4" d="M70,139a68.94,68.94,0,0,1-45-16.72V36a3,3,0,0,1,3-3h76a3,3,0,0,1,3,3v92.23A68.74,68.74,0,0,1,70,139Z"/>
+        <path class="cls-1" d="M104,34a2,2,0,0,1,2,2v91.68a67.93,67.93,0,0,1-80-5.85V36a2,2,0,0,1,2-2h76m0-2H28a4,4,0,0,0-4,4v86.74a69.93,69.93,0,0,0,84,6V36a4,4,0,0,0-4-4Z"/>
+      </g>
+      <g>
+        <rect class="cls-5" x="39" y="53" width="54" height="38" rx="1" ry="1"/>
+        <path class="cls-1" d="M92,54V90H40V54H92m0-2H40a2,2,0,0,0-2,2V90a2,2,0,0,0,2,2H92a2,2,0,0,0,2-2V54a2,2,0,0,0-2-2Z"/>
+      </g>
+      <line class="cls-6" x1="40" y1="44" x2="56" y2="44"/>
+      <polyline class="cls-6" points="44 84 56 76 64 76 76 64 84 68 88 64"/>
+      <polyline class="cls-6" points="40 100 40 124 92 124"/>
+      <rect class="cls-7" x="48" y="112" width="4" height="8"/>
+      <rect class="cls-7" x="56" y="104" width="4" height="16"/>
+      <rect class="cls-7" x="64" y="108" width="4" height="12"/>
+      <rect class="cls-7" x="80" y="108" width="4" height="12"/>
+      <rect class="cls-7" x="72" y="116" width="4" height="4"/>
+    </g>
+  </g>
+</svg>

@@ -2,15 +2,272 @@
 ---------------------------*/
 body{
     margin:0;
-    font:14px "proxima-nova",sans-serif; 
+    font:15px "proxima-nova", 'Montserrat', sans-serif; 
     -webkit-font-smoothing: antialiased;
     background:#fff; 
     color:#212529;
+    text-align:center;
 }
-p, h1, h2, h3, h4, h5, h6 {
-  color: #353942;
+.container{
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:40px;
+    padding-bottom:40px;
+    max-width: 1024px;
+    margin:0 auto;
 }
 
+
+/* Text
+---------------------------*/
+h3{
+    margin-bottom:0;
+    margin-top:10px
+}
+p{
+    margin:5px 0;
+}
+
+/* Branding
+---------------------------*/
+.logo_smarkio{
+    text-align: center;
+}
 .logo_smarkio img{
     width:200px;
+}
+
+
+
+/* Buttons
+---------------------------*/
+.button, a.button{
+    background-color:#2C83E6;
+    display:inline-block;
+    text-decoration: none;
+    padding:15px 25px;
+    color:#fff;
+    border-radius:4px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.button:hover, a.button:hover{
+    box-shadow: 0 5px 0 -2px rgba(0,0,0,.2);
+    transform:translateY(-2px);
+}
+.button:active, a.button:active{
+    box-shadow: inset 0 2px 0 rgba(0,0,0,.2);
+    transform:translateY(2px);
+    opacity:.8;
+}
+.button.white, a.button.white,
+.feature-block-blue .button,
+.banner .button{
+    background-color:#fff;
+    color:#0B4C8A;
+}
+
+/* Content blocks
+---------------------------*/
+.banner{
+    background-color:#0B4C8A;
+    color:#fff;
+    padding:100px 15px;
+    max-height:300px;
+    background-image: url(../images/img-657292908.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+.banner .button{
+    margin-top:40px;
+}
+.feature-block-blue{
+    background-color:#2C83E6;
+    background-image: url(../images/smk-a-symbol.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    color:#fff;    
+}
+.bg-balloons{
+    background-color:#E8F0FA;
+    background-image:url(../images/bg-balloons-1.png);
+    background-size: 300px;
+    background-attachment: fixed;
+}
+.content{
+    padding:40px 15px;
+    margin:0 auto;
+}
+
+.solucao-smk{
+    padding-bottom:40px;
+    padding-top:20px
+}
+
+.bg-lightblue{
+    background-color:#e8f0fa;
+}
+.bg-darkblue{
+    background-color:#0B4C8A;
+    color:#fff;
+}
+.a-solucao-block{
+    padding-top:40px;
+}
+
+/* Lists
+---------------------------*/
+ul.list{
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.list li{
+  padding:15px
+}
+
+.list li::before {
+    content: " ";
+    width:6px;
+    height:6px;
+    border-radius:3px;
+    background-color: #2C83E6;
+    display:block;
+    float:left;
+    margin-left:-15px;
+    margin-top:.5em 
+}
+ul.list.lg-2-col{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul.list.lg-2-col li{
+    width:42%;
+    margin:0 2%;
+    min-width: 300px;
+}
+ul.pills{
+    list-style: none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+ul.pills li{
+    background-color:#fff;
+    border-radius:40px;
+    margin:15px;
+    box-shadow:0 4px 0 rgba(45, 130, 230, 0.2);
+    text-align: left;
+    padding:10px 10px 10px 100px ;
+    min-height: 80px;
+    position:relative;
+    width:300px;
+}
+ul.pills li .smk-icon{
+    position:absolute;
+    left:10px
+}
+
+.list-companies{
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+.list-companies li{
+    padding:15px;
+}
+.list-companies li img{
+    width:100px;
+    filter:grayscale();
+}
+
+.testimonials_list{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.testimonials_list .testimonial{
+    max-width:480px;
+    margin:0 auto;
+
+}
+.testimonials_list .testimonial .text{
+    border-bottom:1px solid rgba(255,255,255,.5);
+    padding-bottom:20px;
+    margin-bottom:20px;
+    position:relative;
+}
+.testimonials_list .testimonial .name{
+    font-size:.8em;
+    font-weight: bold;
+    padding-top:10px;
+    display:block
+}
+.testimonials_list .testimonial .text::after{
+    content:" ";
+    display:block;
+    width:20px;
+    height:20px;
+    border-left:1px solid rgba(255,255,255,.5);
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transform:rotate(-45deg);
+    position:absolute;
+    left:calc(50% - 20px);
+    background-color:#0B4C8A;
+    bottom:-11px;
+
+}
+.testimonials_list .logo-testimonial{
+    width:80px;
+
+}
+
+/* images
+---------------------------*/
+.img-kio{
+    width:120px;
+    animation: bounce 2s ease infinite;
+}
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+img.graph{
+    width:150px
+}
+img.smk-icon{
+    width:80px;
+}
+.image-smartphone{
+    max-width: 200px;
+}
+
+
+/* LARGE SCREENS
+---------------------------*/
+@media screen and (min-width:1024px){
+    .banner{
+        padding:200px;
+        background-attachment: fixed
+    }
 }
