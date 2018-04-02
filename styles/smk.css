@@ -337,17 +337,18 @@ footer .container{
 }
 .signature{
     width:100%;
-    margin:20px 0;
+    margin:20px auto;
 }
 .portugal2020_selo{
     width:100%;
     max-width:480px;
+    margin:0 auto;
 }
 .portugal2020_selo img{
-    width:100%
+    width:100%;
 }
 .partners{
-    margin:20px 0;
+    margin:20px auto;
     max-width:480px;
 }
 .partners img{
