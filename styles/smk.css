@@ -6,7 +6,7 @@ body{
     -webkit-font-smoothing: antialiased;
     background:#fff; 
     color:#212529;
-    text-align:center;
+    text-align: center;
 }
 .container{
     padding-left:15px;
@@ -16,7 +16,9 @@ body{
     max-width: 1024px;
     margin:0 auto;
 }
-
+.block{
+    display: block;
+}
 
 /* Text
 ---------------------------*/
@@ -27,7 +29,9 @@ h3{
 p{
     margin:5px 0;
 }
-
+.text-center{
+    text-align: center;
+}
 /* Branding
 ---------------------------*/
 .logo_smarkio{
@@ -35,6 +39,7 @@ p{
 }
 .logo_smarkio img{
     width:200px;
+    margin:5px 0 10px
 }
 
 
@@ -67,16 +72,19 @@ p{
     color:#0B4C8A;
 }
 
+
 /* Content blocks
 ---------------------------*/
 .banner{
     background-color:#0B4C8A;
     color:#fff;
-    padding:100px 15px;
-    max-height:300px;
+    padding:0;
     background-image: url(../images/img-657292908.jpg);
     background-size: cover;
     background-position: top center;
+}
+.banner .logo_smarkio{
+    background-color:#fff;
 }
 .banner .button{
     margin-top:40px;
@@ -114,8 +122,58 @@ p{
 }
 .a-solucao-block{
     padding-top:40px;
+    text-align: center;
 }
-
+.solucoes-smk .solucao-smk{
+    max-width:600px; 
+    margin:0 auto;
+}
+.bg-smartphone{
+    background-image:url(../images/smartphone.png);
+    background-repeat: no-repeat;
+    background-size: 280px;
+    background-position: bottom center;
+    padding-bottom:300px
+}
+.blockbaloon{
+    padding:60px 0 50px;
+}
+.balloon{
+    background-color:#fff;
+    width:380px;
+    border-radius:20px;
+    padding:15px;
+    margin: 20px auto;clear:both;
+    color:#2C83E6;
+    text-align: center;
+    box-shadow:0 4px 0 rgba(0,0,0,.2);
+}
+.balloon p{
+    font-size:1.5em;
+    font-weight: bold;
+    max-width:280px;
+    margin:10px auto 20px;
+}
+.balloon:after{
+    content:" ";
+    display:block;
+    border:20px solid transparent;
+    border-top:20px solid #fff;
+    width:0;
+    height:0;
+    margin-top:10px;
+    margin-bottom:-50px;
+    margin-left: auto;
+    margin-right:100px;
+}
+.balloon .button{
+    background-color:#2C83E6;
+    color:#fff;
+}
+.balloon .avatar{
+    width:80px;
+    margin:-80px auto 0;
+}
 /* Lists
 ---------------------------*/
 ul.list{
@@ -253,7 +311,15 @@ ul.pills li .smk-icon{
   }
 }
 img.graph{
-    width:150px
+    width:150px;
+    display: inline-block;
+    vertical-align: middle;
+    margin:10px 20px
+}
+img.graph + h2
+{
+    display: inline-block;
+    vertical-align: middle;
 }
 img.smk-icon{
     width:80px;
@@ -263,11 +329,112 @@ img.smk-icon{
 }
 
 
+/* FOOTER
+---------------------------*/
+
+footer .container{
+    margin-bottom:150px
+}
+.signature{
+    width:100%;
+    margin:20px 0;
+}
+.portugal2020_selo{
+    width:100%;
+    float:left;
+    max-width:480px;
+}
+.portugal2020_selo img{
+    width:100%
+}
+.partners{
+    margin:20px 0;
+    float:right;
+    max-width:480px;
+}
+.partners img{
+    width:140px;
+}
+@media screen and (min-width:1024px){
+    .portugal2020_selo img{
+        width:480px
+    }
+}
+
+
 /* LARGE SCREENS
 ---------------------------*/
 @media screen and (min-width:1024px){
-    .banner{
-        padding:200px;
-        background-attachment: fixed
+    body{
+        text-align: left;
     }
+    .banner{
+        width:100%;
+        min-height:600px;
+        position:relative;
+        overflow: hidden;
+        z-index: 1;
+        background-position:right top;
+        background-size: auto 600px;
+    }
+    .banner .logo_smarkio{
+        position:absolute;
+        width:auto;
+        left:5%;
+        top:40px;
+        z-index: 10;
+    }
+    .banner .content{
+        position:absolute;
+        top:25%;
+        left:5%;
+        max-width: 600px;
+        width:40%;        
+        text-align: left;
+        color:#232323;
+        z-index: 3;
+        padding-left:0
+    }
+    .banner .content .button{
+    background-color:#2C83E6;
+        color:#fff;
+        
+    }
+    .white-poligon-bg-lg{
+        content:" ";
+        position:absolute;
+        background-color:#fff;
+        height:100%;
+        width:50%;
+        top:0;
+        left:-5%;
+        z-index: 0;
+        transform: skewX(-10deg)
+    }
+    .a-solucao-block img{
+        float:left;
+        margin:0 20px 0 0
+    }
+    .solucoes-smk .solucao-smk{
+        margin:20px 0;
+    }
+    .bg-smartphone{
+        padding-bottom:0;
+        background-position: calc(100% - 10%) bottom;
+        background-size:340px;
+    }
+    .a-solucao-block{
+        text-align: left;
+    }
+
+    .a-solucao-block .solucao-smk p{
+        padding-top:10px
+    }
+
+}
+@media screen and (min-width:1440px){
+    .banner{
+        background-size: 70% auto;
+    }
+    
 }
