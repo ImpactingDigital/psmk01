@@ -333,7 +333,7 @@ img.smk-icon{
 ---------------------------*/
 
 footer .container{
-    margin-bottom:150px
+    padding-bottom:250px
 }
 .signature{
     width:100%;
@@ -341,7 +341,6 @@ footer .container{
 }
 .portugal2020_selo{
     width:100%;
-    float:left;
     max-width:480px;
 }
 .portugal2020_selo img{
@@ -349,7 +348,6 @@ footer .container{
 }
 .partners{
     margin:20px 0;
-    float:right;
     max-width:480px;
 }
 .partners img{
@@ -360,7 +358,65 @@ footer .container{
         width:480px
     }
 }
-
+#cta-call-chatbot {
+    position: fixed;
+    bottom: 0px;
+    right: -100px;
+    cursor: pointer;
+}
+.cta:hover{
+    transform: scale(1.1)
+}
+.cta:active{
+    transform: scale(.9)
+}
+.cta{
+    background-color: #1d57b7;
+    width: 50px;
+    color: #004990;
+    font-weight: 300;
+    font-size: 18px;
+    transition: all .2s;
+    transition-timing-function: ease-in-out;
+    margin: 0 auto;
+    color: #ffffff;
+    margin-top: 2px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    border-radius: 25px;
+    line-height: 2.5em;
+    height: 50px;
+}
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    background: url(../images/chat-trigger.png) no-repeat 50%;
+    background-size: contain;
+}
+.cta:after {
+    content: " 1 ";
+    position:absolute;
+    top: -6px;
+    bottom: 0;
+    left: -6px;
+    width:20px;
+    height:20px;
+    color:#fff;
+    background-color: #f23f3f;
+    border-radius:50%;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
 
 /* LARGE SCREENS
 ---------------------------*/
@@ -430,7 +486,13 @@ footer .container{
     .a-solucao-block .solucao-smk p{
         padding-top:10px
     }
-
+    .portugal2020_selo{
+        float:left;
+        max-width:480px;
+    }
+    .partners{
+        float:right;
+    }
 }
 @media screen and (min-width:1440px){
     .banner{
