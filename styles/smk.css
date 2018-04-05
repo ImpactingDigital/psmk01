@@ -79,7 +79,7 @@ p{
     background-color:#0B4C8A;
     color:#fff;
     padding:0;
-    background-image: url(../images/img-657292908.jpg);
+    background-image: url(../images/img-smarkio-darkblue-sm.jpg);
     background-size: cover;
     background-position: top center;
 }
@@ -433,6 +433,8 @@ footer .container{
         z-index: 1;
         background-position:right top;
         background-size: auto 600px;
+        background-attachment: fixed;
+        background-image: url(../images/img-smarkio-halfblue.jpg);
     }
     .banner .logo_smarkio{
         position:absolute;
