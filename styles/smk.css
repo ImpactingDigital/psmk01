@@ -327,7 +327,6 @@ ul.pills li .smk-icon{
   0%, 100% {
     transform: scale(.5);
           filter:blur(0);
-
   }
   50% {
     transform: scale(1);
@@ -388,7 +387,22 @@ footer .container{
     position: fixed;
     bottom: 0px;
     right: -100px;
+    top:auto;
     cursor: pointer;
+    animation: popupchat 2s ease;
+}
+@keyframes popupchat {
+  0%{
+    opacity: 0;
+    transform: translateY(100px)
+  }
+  50% {
+    transform: translateY(10px)
+  }
+  100% {
+    opacity:1;
+    transform: translateY(0)
+  }
 }
 .cta:hover{
     transform: scale(1.1)
