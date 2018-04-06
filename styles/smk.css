@@ -1,5 +1,8 @@
 /* General
 ---------------------------*/
+*{
+    box-sizing:border-box;
+}
 body{
     margin:0;
     font:15px "proxima-nova", 'Montserrat', sans-serif; 
@@ -130,10 +133,10 @@ p{
     margin:0 auto;
 }
 .bg-smartphone{
-    background-image:url(../images/smartphone.png);
+    background-image:url(../images/img-smatphone-smk-chat.png);
     background-repeat: no-repeat;
     background-size: 280px;
-    background-position: bottom center;
+    background-position:  center 155%;
     padding-bottom:300px
 }
 .blockbaloon{
@@ -141,7 +144,8 @@ p{
 }
 .balloon{
     background-color:#fff;
-    width:380px;
+    width:90%;
+    max-width:480px;
     border-radius:20px;
     padding:15px;
     margin: 20px auto;clear:both;
@@ -152,7 +156,6 @@ p{
 .balloon p{
     font-size:1.5em;
     font-weight: bold;
-    max-width:280px;
     margin:10px auto 20px;
 }
 .balloon:after{
@@ -333,7 +336,7 @@ img.smk-icon{
 ---------------------------*/
 
 footer .container{
-    padding-bottom:250px
+    padding-bottom:100px
 }
 .signature{
     width:100%;
@@ -479,8 +482,9 @@ footer .container{
     }
     .bg-smartphone{
         padding-bottom:0;
-        background-position: calc(100% - 10%) bottom;
+        background-position: calc(100% - 10%) center;
         background-size:340px;
+        background-attachment: fixed
     }
     .a-solucao-block{
         text-align: left;
@@ -500,10 +504,16 @@ footer .container{
         background-size:600px; 
         background-position:10%;
     }
+    footer .container{
+        padding-bottom:190px
+    }
 }
 @media screen and (min-width:1440px){
     .banner{
         background-size: 70% auto;
+    }
+        .bg-smartphone{
+        background-size: 480px;
     }
     
 }
