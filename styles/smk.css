@@ -360,6 +360,10 @@ img.smk-icon{
 }
 .testimonials .logo-testimonial img{
     width:90%;
+        cursor:pointer;
+}
+.testimonials .logo-testimonial:hover{
+    opacity: .5;
 }
 .testimonials input:checked ~.logo-testimonial{
     opacity: 1;
