@@ -50,7 +50,7 @@ p{
 /* Buttons
 ---------------------------*/
 .button, a.button{
-    background-color:#2C83E6;
+    background-color:#f25e57;
     display:inline-block;
     text-decoration: none;
     padding:15px 25px;
@@ -73,7 +73,7 @@ p{
 .feature-block-blue .button,
 .banner .button{
     background-color:#fff;
-    color:#0B4C8A;
+    color:#f25e57;
 }
 
 
@@ -171,7 +171,7 @@ p{
     margin-right:100px;
 }
 .balloon .button{
-    background-color:#2C83E6;
+    background-color:#f25e57;
     color:#fff;
 }
 .balloon .avatar{
@@ -541,7 +541,7 @@ footer .container{
         padding-left:0
     }
     .banner .content .button{
-    background-color:#2C83E6;
+    background-color:#f25e57;
         color:#fff;
         
     }
