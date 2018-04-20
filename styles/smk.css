@@ -72,8 +72,9 @@ p{
 .button.white, a.button.white,
 .feature-block-blue .button,
 .banner .button{
-    background-color:#fff;
-    color:#f25e57;
+    background-color:#f25e57;
+    color:#fff;
+    border:2px solid #fff;
 }
 
 
@@ -173,6 +174,7 @@ p{
 .balloon .button{
     background-color:#f25e57;
     color:#fff;
+    border:0;
 }
 .balloon .avatar{
     width:80px;
@@ -495,7 +497,7 @@ footer .container{
     width:20px;
     height:20px;
     color:#fff;
-    background-color: #f23f3f;
+    background-color: #f25e57;
     border-radius:50%;
     font-size: 15px;
     line-height: 20px;
